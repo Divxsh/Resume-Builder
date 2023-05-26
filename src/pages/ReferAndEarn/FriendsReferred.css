@@ -1,0 +1,159 @@
+.friendsreferred__container {
+	/* width: 100%; */
+	margin: 0px 12.5%;
+}
+.friendsreferred__section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 60px;
+	align-items: flex-start;
+}
+.referred__details {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.referred__details .referCode {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.referred__details .referCode .title {
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--text-color-secondary);
+}
+.referred__details .referCode .code {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.75em;
+	text-align: center;
+	border: 1.5px solid #dfdfdf;
+	padding: 14px;
+	border-radius: 10px;
+}
+
+.referred__details .walletBalance {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	box-shadow: 0px 2px 8px rgba(128, 0, 128, 0.15);
+	border-radius: 20px;
+	width: 145px;
+	height: 85px;
+	padding: 20px;
+}
+
+.referred__details .walletBalance .title {
+	font-size: 14px;
+	line-height: 21px;
+	color: var(--text-color-secondary);
+}
+.referred__details .walletBalance .value {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.friendsEnrolled__section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.friendsEnrolled__cards {
+	/* width: 100%; */
+	width: 1200px;
+	display: flex;
+	column-gap: 20px;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.friendsEnrolled__cards::-webkit-scrollbar {
+	display: none;
+}
+
+.friendsEnrolled__cards .enrolled_card {
+	width: 358px;
+	height: 228px;
+	background: linear-gradient(270deg, #800080 0%, #ff864c 100%);
+	border-radius: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	color: var(--text-color-white);
+	row-gap: 10px;
+}
+
+.enrolled_card .user__detail {
+	display: flex;
+	justify-content: space-between;
+}
+.enrolled_card .user__detail .username {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+}
+.enrolled_card .user__detail .referral_date {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.enrolled_card .courses_enrolled {
+	display: flex;
+	row-gap: 10px;
+	flex-direction: column;
+}
+.enrolled_card .courses_enrolled .courses_enrolled__heading {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.enrolled_card .courses_enrolled .courses_enrolled__names {
+	height: 72px;
+	display: flex;
+	column-gap: 10px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+	overflow-y: auto;
+	padding: 0px 10px;
+}
+.enrolled_card .courses_enrolled .courses_enrolled__names .pills {
+	padding: 4px 9px;
+	font-size: 14px;
+	line-height: 21px;
+	border: 1.5px solid #eeaeae;
+	border-radius: 20px;
+}
+
+.enrolled_card .referralAmount {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	margin-top: auto;
+}
+.enrolled_card .referralAmount .amount {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+@media screen and (max-width: 700px) {
+	.friendsreferred__container {
+		margin: 0px 7.5%;
+	}
+
+	.friendsEnrolled__cards {
+		width: 100%;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
