@@ -7,8 +7,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
 	return (
 		<BrowserRouter>
-			<div className='App'>
-				<Navbar />
+			<Navbar />
+			<div
+				style={{
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "center",
+				}}
+			>
 				<Routes>
 					<Route path='/' element={<ReferAndEarn />} />
 					<Route path='friendsreferred' element={<FriendsReferred />} />

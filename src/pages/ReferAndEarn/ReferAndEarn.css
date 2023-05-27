@@ -1,6 +1,5 @@
 .referEarn__container {
-	/* width: 100%; */
-	margin: 0px 12.5%;
+	width: 75%;
 }
 
 .referEarn {
@@ -63,7 +62,7 @@
 /* -------------Referral Code--------------- */
 
 .referral_code {
-	width: 358px;
+	min-width: 358px;
 }
 .referral_code h1 {
 	margin-bottom: 8px;
@@ -156,7 +155,7 @@
 
 @media screen and (max-width: 700px) {
 	.referEarn__container {
-		margin: 0px 7.5%;
+		width: 85%;
 	}
 	.referEarn__section {
 		flex-direction: column;
@@ -166,7 +165,7 @@
 	}
 	.dashboard__card {
 		width: 100%;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: 39%;
 		grid-template-rows: repeat(2, auto);
 		margin-right: 0px;
 		padding-bottom: 20px;

@@ -32,3 +32,8 @@
 	line-height: 36px;
 	color: var(--text-color-secondary);
 }
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
