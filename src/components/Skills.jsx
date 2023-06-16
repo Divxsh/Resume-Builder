@@ -17,8 +17,10 @@ const Skills = ({ Add, Delete }) => {
 
 	const onKeyDownHandler = (e) => {
 		if (e.keyCode === 13) {
-			setTempSkills((prev) => [...prev, value]);
-			setValue("");
+			if (value !== "") {
+				setTempSkills((prev) => [...prev, value]);
+				setValue("");
+			}
 		}
 	};
 	const submitHandler = (e) => {
