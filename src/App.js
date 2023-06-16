@@ -1,26 +1,20 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import ReferAndEarn from "./pages/ReferAndEarn/ReferAndEarn";
-import FriendsReferred from "./pages/ReferAndEarn/FriendsReferred";
+import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CreateResume from "./pages/CreateResume";
+import PreviewResume from "./pages/PreviewResume";
+import { Container } from "react-bootstrap";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Navbar />
-			<div
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					alignItems: "center",
-				}}
-			>
+			<Container fluid className='p-0 pb-4 '>
+				<Navbar />
 				<Routes>
-					<Route path='/' element={<ReferAndEarn />} />
-					<Route path='friendsreferred' element={<FriendsReferred />} />
-					{/* <Route path='*' element={<NoPage />} /> */}
+					<Route path='/' element={<CreateResume />} />
+					<Route path='/preview' element={<PreviewResume />} />
 				</Routes>
-			</div>
+			</Container>
 		</BrowserRouter>
 	);
 }

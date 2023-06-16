@@ -7,33 +7,15 @@
 	padding: 0px;
 }
 
-:root {
-	--text-color-primary: #4d4d4d;
-	--text-color-secondary: #800080;
-	--text-color-black: #000000;
-	--text-color-white: #ffffff;
-	--card-background: linear-gradient(270deg, #800080 0%, #ff864c 100%);
-	--scrollbar-color: #eeaeae;
+.form-label {
+	margin-bottom: 6px !important;
 }
 
-.ghost-btn {
+.cursor-pointer {
 	cursor: pointer;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
-	background-color: transparent;
-	border: none;
-	color: var(--text-color-secondary);
 }
 
-.heading {
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 36px;
-	color: var(--text-color-secondary);
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
+.pdf {
+	width: 210mm;
+	height: 297mm;
 }
