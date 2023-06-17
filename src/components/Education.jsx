@@ -10,7 +10,7 @@ import {
 	addEducation,
 	updateEducation,
 	deleteEducation,
-} from "../Actions/resume.actions";
+} from "../Redux/Actions/resume.actions";
 
 const Education = ({ Add, Update, Delete }) => {
 	const initialEditState = { isEdit: false, id: -1 };
@@ -77,7 +77,7 @@ const Education = ({ Add, Update, Delete }) => {
 								<p className='text-muted'>
 									{`${education.startYear} - ${
 										education.isPursuing ? "Present" : `${education.endYear}`
-									}`}
+									}`}{" "}
 									• {education.score}
 								</p>
 							</div>
@@ -166,7 +166,7 @@ const Education = ({ Add, Update, Delete }) => {
 											<Col className='p-0'>
 												<YearSelect
 													name='endYear'
-													disabled={values.isPursuing}
+													disabled={values?.isPursuing}
 												/>
 											</Col>
 										</Col>

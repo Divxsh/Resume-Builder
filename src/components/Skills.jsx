@@ -3,7 +3,7 @@ import { Col, Form, Modal, Row } from "react-bootstrap";
 import { BsPlusSquare } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
 import { connect, useSelector } from "react-redux";
-import { addSkill, deleteSkill } from "../Actions/resume.actions";
+import { addSkill, deleteSkill } from "../Redux/Actions/resume.actions";
 
 const Skills = ({ Add, Delete }) => {
 	const [tempSkills, setTempSkills] = useState([]);
@@ -87,10 +87,10 @@ const Skills = ({ Add, Delete }) => {
 							className='d-flex p-0 px-3 mt-2 flex-wrap mb-2 w-100'
 							style={{ gap: "8px" }}
 						>
-							{tempSkills.map((item) => (
-								<p
+							{tempSkills.map((item, idx) => (
+								<div
 									className='d-flex align-items-center bg-light rounded py-1 pl-2 m-0 border border-gray'
-									key={item}
+									key={item + idx}
 								>
 									{item}
 									<div className='h-100 border-left ml-1'>
@@ -100,7 +100,7 @@ const Skills = ({ Add, Delete }) => {
 											onClick={onDeleteTag(item)}
 										/>
 									</div>
-								</p>
+								</div>
 							))}
 						</Col>
 					</Row>

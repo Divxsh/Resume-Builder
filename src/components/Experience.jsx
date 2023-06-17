@@ -11,7 +11,7 @@ import {
 	addExperience,
 	updateExperience,
 	deleteExperience,
-} from "../Actions/resume.actions";
+} from "../Redux/Actions/resume.actions";
 
 const Experience = ({ Add, Delete, Update }) => {
 	const initialEditState = { isEdit: false, id: -1 };

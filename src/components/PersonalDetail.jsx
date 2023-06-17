@@ -3,7 +3,7 @@ import { Card, Col, Form, Image, Modal, Row } from "react-bootstrap";
 import { MdClose, MdEdit, MdOutlineLocationOn, MdPhone } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import { Field, Form as FinalForm } from "react-final-form";
-import { manageProfile } from "../Actions/resume.actions";
+import { manageProfile } from "../Redux/Actions/resume.actions";
 import { connect, useSelector } from "react-redux";
 
 const PersonalDetail = ({ manageProfile }) => {

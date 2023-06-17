@@ -4,7 +4,7 @@ import { Field, Form as FinalForm } from "react-final-form";
 import { BsPlusSquare } from "react-icons/bs";
 import { MdClose, MdEdit } from "react-icons/md";
 import { connect, useSelector } from "react-redux";
-import { manageAbout } from "../Actions/resume.actions";
+import { manageAbout } from "../Redux/Actions/resume.actions";
 
 const About = ({ manage }) => {
 	const [showModal, setShowModal] = useState(false);
